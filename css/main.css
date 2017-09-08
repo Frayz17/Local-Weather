@@ -1,20 +1,70 @@
+/*<style>
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Open+Sans:400,700');
+</style>*/
+/*
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../img/sun.jpeg") 
+}
+
 .container {
 	text-align: center;
 	margin-top: 70px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+}
+
+.title {
+	font-family: 'Bitter', serif;
+	font-size: 54px;
 }
 
 #city {
 	margin-top: 70px;
+	font-size: 32px;
+	font-weight: 400;
 }
 
 #temperature {
 	margin-top: 50px;
+	font-size: 24px;
+}
+
+.celsius {
+	/*font-weight: 700;*/
+}
+
+.celsius:before {
+	content: "\00b0";
+	/*font-weight: 700;*/
+}
+
+.weather-description {
+	margin: 0 auto;
+	max-width: 400px;
+	/*height: 0px;*/
+	line-height: 0px;
+	text-align: center;
 }
 
 #sky-icon {
-	margin-top: 50px;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 100px;
+	margin-left: -40px;
 }
 
 #sky {
-	margin-top: 50px;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	font-size: 20px;
 }

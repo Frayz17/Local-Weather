@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 
 	<link rel="stylesheet" href="css/main.css">
-	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Bitter:700|Open+Sans:400,700" rel="stylesheet">
 	<title>Local Weather</title>
 </head>
 <body>
@@ -13,9 +13,13 @@
 	<div class="container">
 		<h1 class="title">The Weather today</h1>
 		<h2 id="city" class="">Mariupol</h2>
-		<p id="temperature">12 C</p>
-		<img src="img/" alt="" id="sky-icon">
-		<p id="sky">clouds</p>
+		<p id="temperature">12 <span class="celsius">C</span></p>
+
+		<div class="weather-description">
+			<img src="img/day.svg" alt="" id="sky-icon">
+			<p id="sky">sun</p>
+		</div>
+			
 	</div>
 		
 
