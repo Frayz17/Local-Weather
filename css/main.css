@@ -7,7 +7,8 @@ font-family: 'Open Sans', sans-serif;*/
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-image: url("../img/sun.jpeg") 
+	color: #333333;
+	background-image: url("../img/sun.jpeg")
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
 	padding-top: 5px;
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 10px;
+	/*min-height: 400px;*/
 }
 
 .title {
@@ -32,16 +34,18 @@ body {
 	font-weight: 400;
 }
 
-#temperature {
+#temperature-block {
 	margin-top: 50px;
 	font-size: 24px;
 }
 
-.celsius {
-	/*font-weight: 700;*/
+#degree {
+	cursor: pointer;
+	color: #335889;
+	font-weight: 900;
 }
 
-.celsius:before {
+#degree:before {
 	content: "\00b0";
 	/*font-weight: 700;*/
 }
