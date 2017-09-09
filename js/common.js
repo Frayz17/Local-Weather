@@ -41,11 +41,16 @@ function success(position) {
 	    sky.innerHTML = weatherData.weather[0].description;
 
 
-	    // --------------------- Celsius to fahrenheit temperature--------------------
+	    // --------------------- Toggle Celsius and Fahrenheit systems --------------------
 			degree.addEventListener("click", function(event) {
 				// change celcius degree to fahrenheit degree
-				temperature.innerHTML = fahrenheitDeg;
-				degree.innerHTML = "F";
+				if (degree.textContent == "C") {
+					temperature.innerHTML = fahrenheitDeg;
+					degree.innerHTML = "F";
+				} else {
+					temperature.innerHTML = celsiusDeg;
+					degree.innerHTML = "C";
+				}			
 			});
 
 
